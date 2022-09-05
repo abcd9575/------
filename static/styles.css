@@ -23,7 +23,9 @@
   margin: 0px auto;
 }
 .pagination{
+  display: flex;
   margin-top: 20px;
+  justify-content: center;
 }
 .pagination a{
   color: var(--black);
@@ -37,6 +39,7 @@
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 img {
@@ -56,6 +59,21 @@ body {
     font-weight: bold;
     color: var(--black);
     font-family: 'GowunBatang-Regular';
+}
+
+.osinun_kil{
+  padding: 70px 0;
+  background: #f7f2ee;
+  text-align: center;
+  font-family: 'GowunBatang-Regular';
+}
+
+.icon-heart {
+  transform: rotate(15deg);
+  margin-bottom: 10px;
+}
+.account-row {
+  background: #f7f2ee;
 }
 
 .first {
@@ -96,14 +114,24 @@ body {
   text-align: center;
 }
 
-.row {
-    padding: 70px 20px;
+.roadmap-description {
+  text-align: left;
+  padding: 20px;
+  line-height: 25px;
+}
+
+.roadmap-description h6{
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+}
+.my_row {
+    padding: 70px 20px ;
     text-align: center;
     font-family: 'GowunBatang-Regular';
 }
 
 .row2 {
-    padding: 70px 20px;
+    padding: 70px 40px;
     text-align: center;
     font-family: 'GowunBatang-Regular';
     background: url('/static/bg.png') repeat;
@@ -124,7 +152,7 @@ body {
 
 .calendar td {
   text-align: center;
-  padding: 5px;
+  padding: 7px;
 }
 
 .calendar thead td{
@@ -189,4 +217,21 @@ body {
 
 .guestbook-row table td.content{
   white-space: pre;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+.accordion .card-header {
+  padding: 5px 10px;
+}
+.accordion .card-body {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.slick-slide{
+  height: auto !important;
 }
